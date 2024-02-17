@@ -1,0 +1,35 @@
+@import '../../../index.scss';
+
+.item-list-container {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 1.6rem;
+	padding: 1.6rem;
+	text-decoration: none;
+	color: $grey6;
+	border-bottom: 0.1rem solid $greye;
+	&:last-child {
+		border-bottom: none;
+	}
+	& .item-img {
+		width: 18rem;
+		height: 18rem;
+		border-radius: 0.4rem;
+	}
+	& .item-info-container {
+		padding-top: 1.6rem;
+		& .item-price-container {
+			display: grid;
+			grid-template-columns: auto 1fr;
+			gap: 0.8rem;
+			align-items: center;
+			& .item-price {
+				font-size: 2.4rem;
+			}
+		}
+		& h3 {
+			font-size: 1.8rem;
+			margin: 3.2rem 0 0 0;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+@import '../../../index.scss';
+
+section {
+	& .item-details-container {
+		min-height: 100dvh;
+		padding: 3.2rem;
+		color: $grey6;
+		& .item-details-info-container {
+			display: grid;
+			grid-template-columns: 68rem 1fr;
+			grid-gap: 3.2rem;
+			& .item-details-image {
+				width: 68rem;
+				height: 68rem;
+				object-fit: cover;
+			}
+			& .item-details-info {
+				& .item-condition {
+					font-size: 1.4rem;
+					margin: 0 0 1.6rem 0;
+				}
+				& .item-title {
+					font-size: 2.4rem;
+					font-weight: bold;
+					margin: 1.6rem 0;
+				}
+				& .item-price {
+					font-size: 4.6rem;
+					margin: 3.2rem 0;
+				}
+				& button {
+					width: 100%;
+					background-color: $blue;
+					color: $white;
+					font-size: 1.8rem;
+					border-radius: 0.4rem;
+					padding: 1.6rem 0;
+					border: none;
+				}
+			}
+		}
+		& .item-description-container {
+			margin-top: 3.2rem;
+			& .item-description-title {
+				font-size: 2.8rem;
+				margin: 0 0 3.2rem 0;
+			}
+			& .item-description {
+				font-size: 1.6rem;
+				margin: 0 0 3.2rem 0;
+			}
+		}
+	}
+}
